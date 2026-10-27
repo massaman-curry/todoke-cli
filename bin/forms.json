@@ -1,0 +1,50 @@
+{
+  "acquire": {
+    "label": "社会保険 資格取得・70歳以上該当",
+    "generator": "social-insurance/acquire/generate.js",
+    "validator": "social-insurance/acquire/validate-shfd0006.js",
+    "output": "dist/acquire/SHFD0006.csv",
+    "inputShape": true
+  },
+  "loss": {
+    "label": "社会保険 資格喪失・70歳以上不該当",
+    "generator": "social-insurance/loss/generate.js",
+    "validator": "social-insurance/loss/validate-shfd0006.js",
+    "output": "dist/loss/SHFD0006.csv",
+    "inputShape": true
+  },
+  "bonus": {
+    "label": "賞与支払",
+    "generator": "social-insurance/bonus/generate.js",
+    "validator": "social-insurance/bonus/validate-shfd0006.js",
+    "output": "dist/bonus/SHFD0006.csv",
+    "inputShape": true
+  },
+  "standard-remuneration": {
+    "label": "算定基礎",
+    "generator": "social-insurance/standard-remuneration/generate.js",
+    "validator": "social-insurance/standard-remuneration/validate-shfd0006.js",
+    "output": "dist/standard-remuneration/SHFD0006.csv",
+    "inputShape": true
+  },
+  "monthly-change": {
+    "label": "月額変更",
+    "generator": "social-insurance/monthly-change/generate.js",
+    "validator": "social-insurance/monthly-change/validate-shfd0006.js",
+    "output": "dist/monthly-change/SHFD0006.csv",
+    "inputShape": true
+  },
+  "kokunen-third": {
+    "label": "国民年金第3号",
+    "generator": "social-insurance/kokunen-third/generate.js",
+    "validator": "social-insurance/kokunen-third/validate-shfd0006.js",
+    "output": "dist/kokunen-third/SHFD0006.csv",
+    "inputShape": true
+  },
+  "dependent-third": {
+    "label": "被扶養者異動・第3号",
+    "generator": "social-insurance/dependent-third/generate.js",
+    "validator": "social-insurance/dependent-third/validate-shfd0006.js",
+    "output": "dist/dependent-third/SHFD0006.csv"
+  }
+}

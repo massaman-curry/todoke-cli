@@ -1,0 +1,45 @@
+{
+  "name": "todoke-cli",
+  "version": "0.1.0",
+  "private": true,
+  "description": "社会保険の電子申請用CSVをJSONから生成・検証するツール",
+  "type": "commonjs",
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "prepack": "npm run build",
+    "smoke": "npm run build && node scripts/smoke.cjs",
+    "sample:acquire": "node bin/todoke.cjs generate acquire --input src/social-insurance/acquire/sample-shutoku.json --output dist/samples/acquire/SHFD0006.csv",
+    "sample:loss": "node bin/todoke.cjs generate loss --input src/social-insurance/loss/sample-soshitsu.json --output dist/samples/loss/SHFD0006.csv",
+    "sample:bonus": "node bin/todoke.cjs generate bonus --input src/social-insurance/bonus/sample-shoyo.json --output dist/samples/bonus/SHFD0006.csv",
+    "sample:standard-remuneration": "node bin/todoke.cjs generate standard-remuneration --input src/social-insurance/standard-remuneration/sample-santei.json --output dist/samples/standard-remuneration/SHFD0006.csv",
+    "sample:monthly-change": "node bin/todoke.cjs generate monthly-change --input src/social-insurance/monthly-change/sample-geppen.json --output dist/samples/monthly-change/SHFD0006.csv",
+    "sample:kokunen-third": "node bin/todoke.cjs generate kokunen-third --input src/social-insurance/kokunen-third/sample-kokunen3gou.json --output dist/samples/kokunen-third/SHFD0006.csv",
+    "sample:dependent-third": "node bin/todoke.cjs generate dependent-third --input src/social-insurance/dependent-third/sample-fuyo3gou.json --output dist/samples/dependent-third/SHFD0006.csv",
+    "sample:all": "npm run sample:acquire && npm run sample:loss && npm run sample:bonus && npm run sample:standard-remuneration && npm run sample:monthly-change && npm run sample:kokunen-third && npm run sample:dependent-third"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "license": "MIT",
+  "bin": {
+    "todoke": "bin/todoke.cjs"
+  },
+  "files": [
+    "bin/",
+    "dist-js/",
+    "src/**/*.ts",
+    "src/**/sample-*.json",
+    "docs/",
+    "LICENSE"
+  ],
+  "bundleDependencies": [
+    "iconv-lite"
+  ]
+}

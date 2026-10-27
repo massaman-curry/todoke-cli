@@ -1,0 +1,74 @@
+{
+  "output": "./dist/SHFD0006.csv",
+  "media_serial": "001",
+  "created_on": "2026-10-25",
+  "add_eof": "false",
+  "office": {
+    "prefecture_code": "13",
+    "district_code": "01",
+    "office_symbol": "DMY1",
+    "office_number": "99999",
+    "postal_code_parent": "999",
+    "postal_code_child": "0000",
+    "address": "東京都架空区見本１－２－３",
+    "name": "ダミー事業所株式会社",
+    "owner_name": "山田　太郎",
+    "phone_area": "00",
+    "phone_exchange": "0000",
+    "phone_number": "0000"
+  },
+  "employees": [
+    {
+      "insured_number": "999999",
+      "insured_kana": "ﾔﾏﾀﾞ ﾀﾛｳ",
+      "insured_name": "山田　太郎",
+      "birth_date": "1990-01-01",
+      "revision_month": "2026-07",
+      "previous_standard_monthly_health": "0280",
+      "previous_standard_monthly_pension": "0280",
+      "previous_revision_month": "2025-09",
+      "raise_or_drop_month": "04",
+      "raise_or_drop_type": "1",
+      "retroactive_payment_month": "",
+      "retroactive_payment_amount": "",
+      "payroll_months": [
+        "04",
+        "05",
+        "06"
+      ],
+      "base_days": [
+        "20",
+        "20",
+        "20"
+      ],
+      "cash_amounts": [
+        "300000",
+        "310000",
+        "320000"
+      ],
+      "in_kind_amounts": [
+        "0",
+        "0",
+        "0"
+      ],
+      "total_amounts": [
+        "300000",
+        "310000",
+        "320000"
+      ],
+      "grand_total": "930000",
+      "average_amount": "310000",
+      "corrected_average_amount": "",
+      "personal_number": "",
+      "basic_pension_office_code": "",
+      "basic_pension_serial": "",
+      "remarks_70_or_over": "",
+      "remarks_multiple_offices": "",
+      "remarks_short_time": "",
+      "remarks_raise_reason": "基本給の変更",
+      "remarks_health_only_change": "",
+      "remarks": "",
+      "only_70_or_over": ""
+    }
+  ]
+}

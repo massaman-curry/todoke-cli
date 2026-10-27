@@ -1,0 +1,5 @@
+.nvmrc text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.ts text eol=lf
+*.cjs text eol=lf
