@@ -23,7 +23,7 @@ src/
 
 ## 利用者向けCLI
 
-`package.json` の bin は `bin/todoke.cjs` です。配布された `.tgz` を `npm install --global /path/to/package.tgz` で一度インストールすると、任意のフォルダーから次を実行できます。利用者によるビルドは不要です。
+`package.json` の bin は `bin/todoke.cjs` です。手順は README の「インストールと実行」です。clone したあとに `npm ci`、`npm run build`、`npm link` を行うと、任意のフォルダーから次を実行できます。`npm run build` を省くと実行ファイルが無く、コマンドは終了します。
 
 ```sh
 todoke generate acquire --input ./my-shutoku.json --output ./output/SHFD0006.csv

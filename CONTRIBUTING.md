@@ -23,6 +23,6 @@ mkdir -p dist/packages
 npm pack --pack-destination dist/packages
 ```
 
-`prepack` がビルドし、`dist/packages/todoke-cli-0.1.0.tgz` を作成します。利用者は `npm install --global /path/to/todoke-cli-0.1.0.tgz` を一度実行し、任意のフォルダーから `todoke` を使えます。npmレジストリへの公開や `npm login` は不要です。
+`prepack` がビルドし、`dist/packages/todoke-cli-0.1.0.tgz` を作成します。ファイルとして渡すときの入れ方は README の「ファイルとして配りたい場合」です。npmレジストリへの公開や `npm login` は不要です。
 
 `EXPORT-MANIFEST.json` は出力時点の出自とファイルハッシュの記録であり、その後の変更で自動更新されるものではありません。
